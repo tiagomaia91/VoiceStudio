@@ -61,7 +61,7 @@ export function profileListPresentation(
 
 // ── Saved voices ────────────────────────────────────────────────────────────
 
-function PreviewButton({
+export function ProfilePreviewButton({
   profile,
   ttsBlocker,
   disabledLabel,
@@ -340,7 +340,7 @@ export function SavedVoices({
                   {profile.ref_audio_path ||
                   profile.locked_audio_path ||
                   profile.kind === 'design' ? (
-                    <PreviewButton
+                    <ProfilePreviewButton
                       profile={profile}
                       ttsBlocker={ttsBlocker}
                       disabledLabel={t('engines.none_ready_title')}

@@ -242,7 +242,7 @@ it('explains unsupported Windows proxy bypass rules before retrying setup', () =
   );
   expect(screen.getByText(i18n.t('backend.proxy_bypass_help'))).toBeVisible();
   expect(i18n.t('backend.proxy_bypass_help')).toMatch(
-    /quit VoiceStudio.*launch VoiceStudio from that terminal/,
+    /quit Maia Voice.*launch Maia Voice from that terminal/,
   );
 });
 

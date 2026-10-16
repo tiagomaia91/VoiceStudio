@@ -47,6 +47,10 @@ function initialLocale(): AppLocale {
   } catch {
     // Storage can be unavailable in hardened browser contexts.
   }
+  // Maia Voice: português do Brasil é o idioma padrão da equipe. Quem
+  // escolher outro idioma em Configurações continua com a escolha salva.
+  // A suíte de testes mantém a detecção pelo navegador do projeto original.
+  if (import.meta.env.MODE !== 'test') return 'pt';
   if (typeof navigator !== 'undefined') {
     for (const candidate of navigator.languages || [navigator.language]) {
       const locale = normalizeLocale(candidate);

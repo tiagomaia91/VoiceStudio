@@ -59,8 +59,8 @@ export const savedVoicesRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/personas',
   component: lazyRouteComponent(
-    () => import('@/features/clone/saved-voices-page'),
-    'SavedVoicesPage',
+    () => import('@/features/library/voice-library-page'),
+    'VoiceLibraryPage',
   ),
 });
 

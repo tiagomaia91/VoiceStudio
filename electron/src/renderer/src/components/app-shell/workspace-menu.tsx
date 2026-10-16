@@ -9,10 +9,10 @@ import {
   WrenchIcon,
   LayersIcon,
   LibraryIcon,
+  LibraryBigIcon,
   FilmIcon,
   WandSparklesIcon,
   MicIcon,
-  UsersRoundIcon,
   ChevronRightIcon,
   BlocksIcon,
   WorkflowIcon,
@@ -48,7 +48,7 @@ const openSaved = () => setWorkspace({ libraryOpen: true, libraryTab: 'voices' }
 const voiceDestinations: Destination[] = [
   ['/clone', 'nav.clone_short', FingerprintIcon, openSaved],
   ['/design', 'designWorkspace.title', WandSparklesIcon],
-  ['/personas', 'nav.saved', UsersRoundIcon, openSaved],
+  ['/personas', 'nav.saved', LibraryBigIcon],
   ['/gallery', 'nav.gallery', LibraryIcon],
 ];
 const storyDestinations: Destination[] = [
