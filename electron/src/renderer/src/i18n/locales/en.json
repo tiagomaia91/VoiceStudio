@@ -89,11 +89,11 @@
     "copied": "Copied"
   },
   "homeUi": {
-    "subtitle": "Your open-source, fully local alternative to ElevenLabs — clone and design voices, dub videos, dictate, transcribe, and create audiobooks in 646 languages.",
+    "subtitle": "Maia Soluções voice studio: clone and design voices, dub videos, transcribe and produce voice-overs in 646 languages. Built on the open-source VoiceStudio project.",
     "brand_by": "{{brand}} by",
     "all": "All",
     "allContributors": "All contributors",
-    "title": "VoiceStudio.sh Open Source",
+    "title": "Maia Voice · Voice Lab",
     "design": "Design a voice from a description.",
     "dub": "Translate and dub audio or video.",
     "stories": "Create scenes with multiple voices.",

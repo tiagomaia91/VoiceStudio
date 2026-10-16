@@ -16,6 +16,7 @@ DELETE /glossary/{project_id}/{term_id}
 DELETE /history
 DELETE /history/{history_id}
 DELETE /longform/jobs/{job_id}
+DELETE /maia/library/{profile_id}
 DELETE /marketplace/{filename}
 DELETE /models/licenses/receipts/{plan_digest}
 DELETE /models/{repo_id:path}
@@ -124,6 +125,7 @@ GET /jobs
 GET /jobs/{job_id}
 GET /jobs/{job_id}/events
 GET /longform/jobs
+GET /maia/library
 GET /marketplace/browse
 GET /media-tools/status
 GET /model/loaded
@@ -325,6 +327,7 @@ PUT /archetypes/previews
 PUT /calls/settings
 PUT /glossary/{project_id}/{term_id}
 PUT /history/{history_id}/starred
+PUT /maia/library/{profile_id}
 PUT /profiles/{profile_id}
 PUT /profiles/{profile_id}/audio
 PUT /profiles/{profile_id}/image

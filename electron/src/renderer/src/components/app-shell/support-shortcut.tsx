@@ -5,8 +5,13 @@ import { Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip
 import './support-shortcut.css';
 import { GithubStar } from './github-star';
 
+// Maia Voice (uso interno): sem atalhos de plano Pro e estrelas do GitHub
+// no cabeçalho. Defina VITE_MAIA_SHOW_UPSTREAM_LINKS=1 para reexibir.
+const SHOW_UPSTREAM_LINKS = import.meta.env.VITE_MAIA_SHOW_UPSTREAM_LINKS === '1';
+
 export function SupportShortcut() {
   const { t } = useTranslation();
+  if (!SHOW_UPSTREAM_LINKS) return null;
   return (
     <div className="flex shrink-0 items-center gap-2">
       <Tooltip>

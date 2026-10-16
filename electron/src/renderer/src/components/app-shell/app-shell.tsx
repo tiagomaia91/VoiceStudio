@@ -1,4 +1,8 @@
 import { SponsorFooter } from './sponsor-footer';
+
+// Maia Voice (uso interno): rodapé de patrocínio e redes do projeto original
+// fica oculto. Defina VITE_MAIA_SHOW_UPSTREAM_LINKS=1 para reexibir.
+const SHOW_UPSTREAM_LINKS = import.meta.env.VITE_MAIA_SHOW_UPSTREAM_LINKS === '1';
 import { WorkspaceSidebar } from './workspace-sidebar';
 import { CommandPalette } from '@/components/command-palette';
 import { Outlet, useRouterState } from '@tanstack/react-router';
@@ -54,7 +58,7 @@ export function AppShell() {
               <div className="min-h-0 flex-1 overflow-hidden">
                 <Outlet />
               </div>
-              <SponsorFooter />
+              {SHOW_UPSTREAM_LINKS && <SponsorFooter />}
               <RepairAgentDock />
             </main>
           </BackendGate>
